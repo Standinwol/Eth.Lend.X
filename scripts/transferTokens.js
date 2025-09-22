@@ -1,4 +1,5 @@
 const { ethers } = require("hardhat");
+require("dotenv").config();
 const { MAIN_ACCOUNT, INFURA_API_KEY, INFURA_SEPOLIA_API_URL } = process.env;
 const axios = require("axios");
 

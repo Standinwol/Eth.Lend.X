@@ -20,8 +20,8 @@ module.exports = {
     },
 
     sepolia: {
-      url: "https://mainnet.infura.io/v3/d6179b3ed6f64fc8826e8f346bccc1cb",
-      accounts: ["7307637696a29243994bb381f27eae8cac9047cadf76a5084dc3ad41e9285d22"],
+      url: process.env.INFURA_SEPOLIA_API_URL,
+      accounts: [process.env.MAIN_ACCOUNT],
       chainId: 11155111,
     },
 
