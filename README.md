@@ -150,6 +150,41 @@ npx hardhat run scripts/deploy.js --network localhost
 ```
 npm run dev
 ```
+
+## Deploying to Vercel 🚀
+
+This project is optimized for deployment on Vercel. Follow these steps:
+
+### Quick Deploy
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/YOUR_REPO_NAME)
+
+### Manual Deployment
+
+1. **Prepare Environment Variables**
+   - Copy `.env.example` to `.env.local`
+   - Set your Infura API key and contract addresses
+
+2. **Deploy Smart Contracts to Sepolia**
+   ```bash
+   npx hardhat run scripts/deploy-sepolia.js --network sepolia
+   ```
+
+3. **Deploy to Vercel**
+   - Push your code to GitHub
+   - Connect your repository to Vercel
+   - Set environment variables in Vercel dashboard
+   - Deploy automatically
+
+4. **Configure Environment Variables in Vercel**
+   ```
+   NEXT_PUBLIC_INFURA_API_URL=https://sepolia.infura.io/v3/YOUR_PROJECT_ID
+   NEXT_PUBLIC_LENDING_POOL_ADDRESS=your_deployed_address
+   NEXT_PUBLIC_NETWORK_ID=11155111
+   ```
+
+For detailed deployment instructions, see [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)
+
+## Local Development & Testing
 8. To run hardhat tests to verify the working of Dapp, run the script below
 
 ```
